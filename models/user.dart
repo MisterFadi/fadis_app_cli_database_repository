@@ -3,7 +3,11 @@ class User {
   String password;
   String email;
 
-  User({required this.name, required this.password, required this.email});
+  User(
+      {required this.name,
+      required this.password,
+      required this.email,
+      required Type int});
 
   void add(User newUser) {}
 }
