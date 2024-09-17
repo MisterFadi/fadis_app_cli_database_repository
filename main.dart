@@ -9,7 +9,7 @@ import 'models/user.dart';
 
 void main() {
   DatabaseRepository mockdatabase = MockDatabase();
-  mockdatabase.addNewUser("fadi", "1234", "hallo@1234.de");
+  mockdatabase.addNewUser("fadi", "1234", "hallo@1234.de", 23452);
 
   List<User> currentUser = mockdatabase.getAllUsers();
   print(currentUser);
