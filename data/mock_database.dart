@@ -13,8 +13,8 @@ class MockDatabase implements DatabaseRepository {
   }
 
   @override
-  void addNewUser(String name, String password, String email) {
-    User newUser = User(name: name, password: password, email: email);
+  void addNewUser(String name, String password, String email, int id) {
+    User newUser = User(name: name, password: password, email: email, int: int);
     newUser.add(newUser);
   }
 
@@ -32,11 +32,14 @@ class MockDatabase implements DatabaseRepository {
   void removeProduct(String name) {}
 
   @override
-  void removeUser(String email) {}
+  void removeUser(int id) {}
 
   @override
   void updateProduct(String name, int newAmount) {}
 
   @override
   void addNewList(String name) {}
+
+  @override
+  void showMeProduct(String name) {}
 }
